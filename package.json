@@ -2,9 +2,9 @@
   "name": "test-nightwatch",
   "version": "1.0.0",
   "description": "",
-  "main": "nightwatch.conf.js.js",
+  "main": "nightwatch.conf.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch frontend/src/test/nightwatch.js"
   },
   "repository": {
     "type": "git",
