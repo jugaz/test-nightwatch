@@ -1,0 +1,26 @@
+{
+  "name": "test-nightwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.conf.js.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugaz/test-nightwatch.git"
+  },
+  "author": "Jesús Antonio Ugaz Vegas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jugaz/test-nightwatch/issues"
+  },
+  "homepage": "https://github.com/jugaz/test-nightwatch#readme",
+  "dependencies": {
+    "chromedriver": "^80.0.1",
+    "geckodriver": "^1.19.1",
+    "nightwatch": "^1.3.4",
+    "run-sequence": "^2.2.1",
+    "selenium-server": "^3.141.59"
+  }
+}
