@@ -1,6 +1,6 @@
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
-var output = "build/test/images"
+var output = "docs/test/images"
 var input = "frontend/src/test"
 module.exports = {
     "src_folders": [
@@ -35,4 +35,3 @@ module.exports = {
         }
     }
 }
-
