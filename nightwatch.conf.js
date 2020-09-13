@@ -1,7 +1,7 @@
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
-var output = "docs/test/images"
-var input = "frontend/src/test"
+var output = "./docs/test/images"
+var input = "./frontend/src/test"
 module.exports = {
     "src_folders": [
         input // Where the tests are located
@@ -10,7 +10,7 @@ module.exports = {
     "selenium": { // selenium configuration settings
         "start_process": true, // tells nightwatch to manage the selenium process
         "server_path": seleniumServer.path, // path to selenium
-        "log_path": "test",
+        "log_path": "./test",
         "host": "127.0.0.1", // host for selenium
         "port": 8080, // port for selenium
         "cli_args": {
@@ -21,7 +21,7 @@ module.exports = {
         "default": { // default settings (you can override with custom settings)
             "screenshots": {
                 "enabled": true, // enables screenshots
-                "path": "./test/images" // output folder for screenshots
+                "path": output  // output folder for screenshots
             },
             "globals": {
                 "waitForConditionTimeout": 15000 // sometimes internet is slow so wait.

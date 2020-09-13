@@ -1,12 +1,13 @@
+
 //Ruta en dond se guarda las imagenes
-var routeImages = './docs/test/images-';
+var routeImages = './docs/test/images';
 
 //Crear Carpeta 
 var mkdirp = require('mkdirp');
 
 
 
-mkdirp('/docs/test/images' + dateFormat, function(err) {
+mkdirp(routeImages + dateFormat, function(err) {
     if (err) console.error(err)
     else console.log('pow!')
 });
@@ -27,11 +28,10 @@ var dateFormat = day + "-" + month + "-" + year + "-" + count++;
 var routeformat = routeImages + dateFormat + ".png"
 
 
-
 module.exports = {
     'test search': function(browser) {
         browser
-            .url('https://www.solven.pe/')
+            .url('https://www.jugazweb.com/')
             .maximizeWindow()
             .waitForElementPresent('body', 2000)
             .pause(2000)
